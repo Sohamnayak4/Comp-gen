@@ -6,7 +6,7 @@ interface LiveCodePreviewProps {
   noInline?: boolean;
 }
 
-const LiveCodePreview: React.FC<LiveCodePreviewProps> = ({ code, noInline = false }) => {
+const LiveCodePreview: React.FC<LiveCodePreviewProps> = ({ code }) => {
   const scope = {
     React,
     useState: React.useState,
